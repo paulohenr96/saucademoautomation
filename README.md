@@ -32,11 +32,22 @@ npm run cypress:run
 Para executar apenas os testes específicos:
 
 ```bash
+# Apenas testes de login
 npm run test:login
-````
-```
+
+# Apenas testes de compra
 npm run test:purchase
 ```
+
+## Integração Contínua
+
+Este projeto está configurado com GitHub Actions para executar os testes automaticamente:
+
+- Os testes são executados em cada push para as branches main/master
+- Os testes são executados em cada pull request para as branches main/master
+- É possível executar os testes manualmente através da interface do GitHub Actions
+
+O arquivo de configuração está em `.github/workflows/cypress.yml`.
 
 ## Estrutura do projeto
 
