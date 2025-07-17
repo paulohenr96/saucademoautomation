@@ -23,10 +23,19 @@ Para abrir o Cypress em modo interativo:
 npm run cypress:open
 ```
 
-Para executar os testes em modo headless:
+Para executar todos os testes em modo headless:
 
 ```bash
 npm run cypress:run
+```
+
+Para executar apenas os testes específicos:
+
+```bash
+npm run test:login
+````
+```
+npm run test:purchase
 ```
 
 ## Estrutura do projeto
