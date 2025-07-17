@@ -69,3 +69,7 @@ npm run cypress:run
 - performance_glitch_user
 
 Senha para todos os usuários: `secret_sauce`
+
+## Ferramentas utilizadas
+
+Este projeto foi desenvolvido com o auxílio do Amazon Q, um assistente de IA da AWS que ajudou na criação da estrutura do projeto, implementação dos testes e resolução de problemas.
