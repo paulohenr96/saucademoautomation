@@ -1,0 +1,13 @@
+{
+  "name": "saucedemoautomation",
+  "version": "1.0.0",
+  "description": "Testes automatizados para o site saucedemo",
+  "scripts": {
+    "cypress:open": "cypress open",
+    "cypress:run": "cypress run",
+    "test:login": "cypress run --spec cypress/e2e/login.cy.js"
+  },
+  "devDependencies": {
+    "cypress": "^13.6.0"
+  }
+}
