@@ -1,6 +1,14 @@
 describe('Login Page', () => {
   beforeEach(() => {
     // Abordagem simples com timeout aumentado
+
+
+  cy.intercept('POST', '**backtrace.io/**', {
+    statusCode: 204,
+    body: {}
+  }).as('suppressBacktrace')
+
+
     cy.visit('/', { timeout: 120000 })
   })
 
