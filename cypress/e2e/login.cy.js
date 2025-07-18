@@ -3,13 +3,7 @@ describe('Login Page', () => {
     // Abordagem simples com timeout aumentado
 
 
-  cy.intercept('POST', '**backtrace.io/**', {
-    statusCode: 204,
-    body: {}
-  }).as('suppressBacktrace')
-
-
-    cy.visit('/', { timeout: 120000 ,  failOnStatusCode: false
+    cy.visit('https://www.saucedemo.com', { timeout: 120000 ,  failOnStatusCode: false
 })
   })
 
