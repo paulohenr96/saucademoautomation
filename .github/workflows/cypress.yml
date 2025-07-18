@@ -27,6 +27,10 @@ jobs:
         with:
           browser: chrome
           headed: false
+          record: true
+        env:
+          # Passe a record key como uma variável de ambiente secreta
+          CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
       
       - name: Upload screenshots
         uses: actions/upload-artifact@v4

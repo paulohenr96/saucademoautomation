@@ -6,7 +6,8 @@
     "cypress:open": "cypress open",
     "cypress:run": "cypress run",
     "test:login": "cypress run --spec cypress/e2e/login.cy.js",
-    "test:purchase": "cypress run --spec cypress/e2e/purchase.cy.js"
+    "test:purchase": "cypress run --spec cypress/e2e/purchase.cy.js",
+    "test:cloud":"cypress run --record"
   },
   "devDependencies": {
     "cypress": "^13.6.0"
