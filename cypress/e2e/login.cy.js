@@ -3,7 +3,10 @@ describe('Login Page', () => {
     // Abordagem simples com timeout aumentado
 
 
-    cy.visit('https://www.saucedemo.com', { timeout: 120000 ,  failOnStatusCode: false
+    cy.visit('https://www.saucedemo.com', { timeout: 120000 ,
+        failOnStatusCode: false,
+          waitUntil: 'domcontentloaded' // NÃO espera pelo evento "load"
+
 })
   })
 
