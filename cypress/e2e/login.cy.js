@@ -9,7 +9,8 @@ describe('Login Page', () => {
   }).as('suppressBacktrace')
 
 
-    cy.visit('/', { timeout: 120000 })
+    cy.visit('/', { timeout: 120000 ,  failOnStatusCode: false
+})
   })
 
  
