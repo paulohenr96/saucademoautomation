@@ -2,10 +2,11 @@ describe('Login Page', () => {
   beforeEach(() => {
     // Abordagem simples com timeout aumentado
 
-
+    cy.intercept('/service-worker.js',{body:undefined})
     cy.visit('https://www.saucedemo.com', { timeout: 120000 ,
         failOnStatusCode: false,
-          waitUntil: 'domcontentloaded' // NÃO espera pelo evento "load"
+        
+        waitUntil: 'domcontentloaded' // NÃO espera pelo evento "load"
 
 })
   })
